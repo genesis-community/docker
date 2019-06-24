@@ -3,6 +3,9 @@ MAINTAINER James Hunt <james@niftylogic.com>
 
 RUN apt-get update \
  && apt-get install -y curl wget git unzip \
+                       build-essential zlibc zlib1g-dev ruby ruby-dev openssl \
+                       libxslt-dev libxml2-dev libssl-dev libreadline7 libreadline-dev \
+                       libyaml-dev libsqlite3-dev sqlite3 \
  && rm -rf /var/lib/apt/lists/* \
  && curl -Lo vault.zip https://releases.hashicorp.com/vault/1.1.3/vault_1.1.3_linux_amd64.zip \
      && unzip vault.zip \
