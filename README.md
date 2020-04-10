@@ -10,12 +10,12 @@ do deployments.
 Software Installed
 ------------------
 
-- **Vault** v1.1.3 (https://vaultproject.io)
-- **Safe** v1.2.1 (https://github.com/starkandwayne/safe)
-- **Spruce** v1.2.0 (https://github.com/geofffranks/spruce)
+- **Vault** v1.4.0 (https://vaultproject.io)
+- **Safe** v1.5.4 (https://github.com/starkandwayne/safe)
+- **Spruce** v1.25.2 (https://github.com/geofffranks/spruce)
 - **jq** v1.6 (https://github.com/stedolan/jq)
-- **BOSH** v5.5.1 (https://github.com/cloudfoundry/bosh-cli)
-- **Genesis** v2.6.16 (https://github.com/genesis-community/genesis)
+- **BOSH** v6.2.1 (https://github.com/cloudfoundry/bosh-cli)
+- **Genesis** v2.7.1 (https://github.com/genesis-community/genesis)
 
 Usage
 -----
