@@ -23,3 +23,5 @@ RUN apt-get update \
 
 RUN curl -Lo /usr/bin/genesis https://github.com/genesis-community/genesis/releases/download/v2.7.1/genesis \
      && chmod 0755 /usr/bin/genesis
+
+RUN genesis -v
