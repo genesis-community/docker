@@ -7,5 +7,6 @@ build:
 release: build
 	docker tag $(IMAGE):dev $(IMAGE):latest
 	docker tag $(IMAGE):dev $(IMAGE):$(TAG)
+push: release
 	docker push $(IMAGE):latest
 	docker push $(IMAGE):$(TAG)
