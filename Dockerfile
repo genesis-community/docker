@@ -21,7 +21,7 @@ RUN apt-get update \
  && curl -Lo /usr/bin/bosh https://github.com/cloudfoundry/bosh-cli/releases/download/v6.2.1/bosh-cli-6.2.1-linux-amd64 \
      && chmod 0755 /usr/bin/bosh
 
-RUN curl -Lo /usr/bin/genesis https://github.com/genesis-community/genesis/releases/download/v2.7.1/genesis \
+RUN curl -Lo /usr/bin/genesis https://github.com/genesis-community/genesis/releases/download/v2.7.4/genesis \
      && chmod 0755 /usr/bin/genesis
 
 RUN genesis -v
