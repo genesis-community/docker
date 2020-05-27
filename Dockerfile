@@ -21,6 +21,12 @@ RUN apt-get update \
  && curl -Lo /usr/bin/bosh https://github.com/cloudfoundry/bosh-cli/releases/download/v6.2.1/bosh-cli-6.2.1-linux-amd64 \
      && chmod 0755 /usr/bin/bosh
 
+RUN curl -Lo credhub_cli.tgz https://github.com/cloudfoundry-incubator/credhub-cli/releases/download/2.7.0/credhub-linux-2.7.0.tgz \
+ && tar -zxf credhub_cli.tgz \
+ && mv credhub /usr/bin/credhub \
+ && chmod 0755 /usr/bin/credhub \
+ && rm credhub_cli.tgz
+
 ARG GENESIS_VERSION
 
 RUN curl -Lo /usr/bin/genesis https://github.com/genesis-community/genesis/releases/download/v$GENESIS_VERSION/genesis \
