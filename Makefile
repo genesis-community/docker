@@ -2,7 +2,7 @@ IMAGE := starkandwayne/genesis
 TAG   ?= 2.7.1
 
 build:
-	docker build -t $(IMAGE):dev .
+	docker build -t $(IMAGE):dev --build-arg GENESIS_VERSION=$(TAG) .
 	docker run $(IMAGE):dev genesis -v
 release: build
 	docker tag $(IMAGE):dev $(IMAGE):latest
