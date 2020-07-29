@@ -14,7 +14,7 @@ RUN apt-get update \
      && rm vault.zip \
  && curl -Lo /usr/bin/safe https://github.com/starkandwayne/safe/releases/download/v1.5.4/safe-linux-amd64 \
      && chmod 0755 /usr/bin/safe \
- && curl -Lo /usr/bin/spruce https://github.com/geofffranks/spruce/releases/download/v1.25.2/spruce-linux-amd64 \
+ && curl -Lo /usr/bin/spruce https://github.com/geofffranks/spruce/releases/download/v1.26.0/spruce-linux-amd64 \
      && chmod 0755 /usr/bin/spruce \
  && curl -Lo /usr/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 \
      && chmod 0755 /usr/bin/jq \
