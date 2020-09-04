@@ -1,5 +1,5 @@
 IMAGE := starkandwayne/genesis
-TAG   ?= 2.7.1
+TAG   ?= 2.7.12
 
 build:
 	docker build -t $(IMAGE):dev --build-arg GENESIS_VERSION=$(TAG) .
