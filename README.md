@@ -1,6 +1,16 @@
 Genesis Docker Image
 ====================
 
+## DEPRECATED
+
+#### This functionality has been moved into the genesis ci pipeline.
+
+The pipeline will produce production and dev images, which can be found on dockerhub under genesiscommunit/genesis.  Tags `latest` will be the latest production release, while `dev` will be the latest development release candidate.  Versioned images will also be found with the version as its tag.
+
+This repository will no longer be maintained
+
+----
+
 This repository contains the recipe for the Genesis Docker Image,
 a container image that wraps up all of the tools and libraries
 necessary for running Genesis deployments.  It is intended to be

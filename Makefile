@@ -1,5 +1,5 @@
-IMAGE := starkandwayne/genesis
-TAG   ?= 2.7.12
+IMAGE := registry.ops.scalecf.net/genesis-community/genesis
+TAG   ?= $(shell genesis version | cut -f 2 -d ' ')
 
 rebuild:
 	docker build -t $(IMAGE):dev --build-arg GENESIS_VERSION=$(TAG) --no-cache .
